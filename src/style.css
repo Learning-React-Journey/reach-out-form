@@ -1,0 +1,171 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper img {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+form {
+  width: 40%;
+  padding: 0px 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 90vh;
+}
+
+form h1 {
+  font-size: 2.4em;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  color:  rgb(26, 33, 70);
+}
+
+.field,.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap:10px;
+}
+
+.field label {
+  font-size: 0.8em;
+}
+
+.field>input,
+.phone-content,
+.field textarea {
+  width: 100%;
+  padding: 6px;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.8em;
+  box-shadow: 0px 0px 3px 0px #999999;
+  transition: 500ms;
+}
+
+.phone-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-content input, .phone-content select{
+  border: none;
+}
+
+.phone-content select{
+  background: none;
+}
+
+.phone-content input{
+  width: 70%;
+}
+
+.phone-content .code{
+  width: 10%;
+  text-align: center;
+  border-right: 1px solid #929191;
+}
+
+.field.textarea{
+  height: 14vh;
+}
+
+.field textarea{
+  height: 60%;
+}
+
+.field>input:focus, .field textarea:focus, .phone-content:focus{
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #005396;
+}
+
+.phone-content select:focus, .phone-content input:focus{
+  outline: none;
+}
+
+.services{
+  height: 15vh;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.checkboxes{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 70%;
+}
+
+.checkboxes label{
+  width: 50%;
+}
+
+.get-started-btn{
+  background-color: rgb(26, 33, 70);
+  border: none;
+  border-radius: 8px;
+  color: aliceblue;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 6px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.get-started-btn:hover{
+  background-color: rgb(16, 21, 44);
+}
+
+@media (max-width:768px) {
+    .wrapper{
+      flex-direction: column;
+      height: auto;
+    }
+    .wrapper img{
+      width: 100%;
+      height: 60vh;
+    }
+
+    form{
+      padding:5vh 5vw;
+      width: 80%;
+      height: 100vh;
+    }
+
+    form h1{
+      font-size: 2em;
+    }
+
+    .field,.services{
+      gap: 5px ;
+    }
+
+    .services{
+      height: 20vh;
+    }
+  
+    .checkboxes{
+      height: 50%;
+    }
+}
