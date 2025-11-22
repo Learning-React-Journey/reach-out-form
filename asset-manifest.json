@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/reach-out-form.git/static/css/main.032e9e2b.css",
+    "main.js": "/reach-out-form.git/static/js/main.c53217f8.js",
+    "static/media/stairs.png": "/reach-out-form.git/static/media/stairs.1a735be7d294b9789a02.png",
+    "index.html": "/reach-out-form.git/index.html",
+    "main.032e9e2b.css.map": "/reach-out-form.git/static/css/main.032e9e2b.css.map",
+    "main.c53217f8.js.map": "/reach-out-form.git/static/js/main.c53217f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.032e9e2b.css",
+    "static/js/main.c53217f8.js"
+  ]
+}
